@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<script src="https://kit.fontawesome.com/1789c1b9ce.js" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*.slideshow-container{
+  position: relative;
+}
+
+.container.box{
+  margin: 50px;display:table;
+  }
+  .container.box.box-cell.box1{
+    text-align: justify;
+  }
+  .container.box.box-cell{
+    display:table-cell;
+  }
+  .container.box.box-cell.box2{
+    text-align: justify;
+    padding-left: 10px;
+  }*/
+
+/* Style the header */
+header {
+  background-color: #8aebfe;
+  padding: 2px;
+  text-align: left;
+  font-size: 30px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 20%;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+  background: #8aebfe;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: right;
+  padding: 20px;
+  height:3000px;
+  width: 94%;
+  background-color:white;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #8aebfe;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+/*solid{
+  border-style: solid;
+}*/
+h5{
+  width: 200px;
+  border-color: white;
+  border: 1px solid;
+}
+h5.a{
+  word-wrap: break-word;
+ }
+
+[id$="gate"]{
+  display:none;
+}
+[id$="gate"]:target{
+  display:block
+}
+.gate{
+  height: 3000px;
+  overflow: hidden;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+ <header style="background-image: url('images/WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg');background-size: 100%100%;background-attachment: fixed;">
+  <h4 style="text-align:left">HOME SMART <i class='fas fa-home'style='font-size:12px'></i><i class='fas fa-home'style='font-size:24px'></i><i class='fas fa-home'style='font-size:36px'></i><i class='fas fa-home'style='font-size:48px;color:blue'></i></h4>
+  <h3>Find Your</h3>
+  <h3>Dream Home</h3>
+  <h6 style="color:blue">Worry No More<br>Find Comfortable Houses </h6>
+ </header>
+
+
+<div class="gate" style="background-image: url('images/WhatsApp Image 2023-03-18 at 8.58.17 AM.jpeg');
+background-repeat: no-repeat;background-attachment: fixed;
+background-size: 100% 100%;">
+ 
+ <div class="gate" id="HS"> 
+
+ <section>
+   <article style="background-image: url('images/Screenshot 2023-03-17 231713.png');
+   background-attachment: fixed;background-size: 100% 100%;
+   background-repeat: no-repeat;">
+
+    <h2 style="color:blue;text-align: center;font-size: 30px;">WELCOME TO HOME SMART</h2>
+    <h2>CHOOSE A LOCATION</h2>
+       <li><a href="#gateA">Gate A</a></li>
+       <li><a href="#gateB">Gate B</a></li>
+       <li><a href="#gateC">Gate C</a></li>
+    <h2>About Us<hr></h2>
+    <p>
+      This is a trusted website that helps you find houses around Juja<br><br>
+      There is a variety to choose from<br><br>
+      Each house comes with additional information like:
+      <li>Size of the House</li><br>
+      <li>Amount of rent paid per month</li><br>
+      <li>Other expenses such as water and garbage</li><br>
+      <li>Location of the House</li><br>
+      <li>Clear images of the rooms</li><br>
+      <li>Contacts of the landlords and caretakers</li><br>
+      <li>Availability of parking space</li><br>
+      <li>Availability of wi-fi</li><br>
+      <li>Roads connected to the house</li><br><br>
+
+      <h2>Fill in the Form Below</h2>
+      <h2>Let us Know Your Experience</h2>
+
+
+    </p>
+
+   </article>
+ </section>
+ </div>
+
+</body>
+</html>
+
+  <div class="gate" id="gateA"><h3>AVAILABLE HOUSES IN GATE A</h3>
+      <h4>Walawi Appartments</h4>
+      <div class="slideshow-container" style="width:500px">
+        <img class="mySlides" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+        <img class="mySlides" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+        <img class="mySlides" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
+        <img class="mySlides" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
+        <img class="mySlides" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
+        <img class="mySlides" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
+        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p> 
+          <hr>
+      </div>
+
+      <script>
+      window.addEventListener("load", () => {
+       var myIndex = 0;
+       carousel();
+      
+       function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 3000); // Change image every 2 seconds
+       }
+      }) 
+      </script>
+
+      <h4>Anchor Suites</h4>
+      <div class="slideshow-container" style="max-width:500px">
+        <img class="mySlides2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+        <img class="mySlides2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+        <img class="mySlides2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+        <img class="mySlides2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+      </div>
+
+      <script>
+      window.addEventListener("load", () => {
+        var myInd = 0;
+        carousel();
+        
+        function carousel() {
+          var f;
+          var y = document.getElementsByClassName("mySlides2");
+          for (f = 0; f < y.length; f++) {
+            y[f].style.display = "none";  
+            }
+            myInd++;
+            if (myInd > y.length) {myInd = 1}    
+            y[myInd-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      })
+      </script>
+      
+      <h4>Artesian Appartments</h4>
+      <div class="slideshow-container" style="max-width:500px">
+        <img class="mySlides3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+        <img class="mySlides3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+        <img class="mySlides3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+        <img class="mySlides3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+      </div>
+
+      <script>
+      window.addEventListener("load", () => {
+        var myIndex = 0;
+        carousel();
+      
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides3");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      })
+      </script>
+
+      <h4>Artesian Appartments</h4>
+      <div class="slideshow-container" style="max-width:500px">
+        <img class="mySlides4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+        <img class="mySlides4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+        <img class="mySlides4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+        <img class="mySlides4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+      </div>
+
+      <script>
+      window.addEventListener("load", () => {
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides4");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      })
+      </script>
+      <h4>Artesian Appartments</h4>
+      <div class="slideshow-container" style="max-width:500px">
+        <img class="mySlides5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+        <img class="mySlides5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+        <img class="mySlides5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+        <img class="mySlides5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+      </div>
+
+      <script>
+      window.addEventListener("load", () => {
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides5");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      })
+      </script>
+
+      <h2>Artesian Appartments</h2>
+      <div class="slideshow-container" style="max-width:500px">
+        <img class="mySlides6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+        <img class="mySlides6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+        <img class="mySlides6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+        <img class="mySlides6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <img class="mySlides6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+      </div>
+
+      <script>
+      window.addEventListener("load", () => {
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides6");
+          for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      })
+      </script>
+  </div>
+
+  <div class="gate" id="gateB"><h3 style="text-align: center;">AVAILABLE HOUSES IN GATE B</h3>
+    <h4>Walawi Appartments</h4>
+     <div class="slideshows" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
+       <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+         <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+         <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p> 
+         <hr>
+    </div>
+
+    <script>
+     window.addEventListener("load", () => {
+      var myIndex = 0;
+      carousel();
+     
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+     }) 
+    </script>
+
+    <h4>Anchor Suites</h4>
+    <div class="slideshows" style="max-width:500px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+         <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+         <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+    </div>
+
+    <script>
+     window.addEventListener("load", () => {
+       var myInd = 0;
+       carousel();
+       
+       function carousel() {
+         var f;
+         var y = document.getElementsByClassName("mySlide2");
+         for (f = 0; f < y.length; f++) {
+           y[f].style.display = "none";  
+           }
+           myInd++;
+           if (myInd > y.length) {myInd = 1}    
+           y[myInd-1].style.display = "block";  
+           setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+     })
+    </script>
+     
+    <h4>Artesian Appartments</h4>
+    <div class="slideshows" style="max-width:500px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+         <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+         <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+    </div>
+
+    <script>
+     window.addEventListener("load", () => {
+       var myIndex = 0;
+       carousel();
+     
+       function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlide3");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+     })
+    </script>
+
+    <h4>Artesian Appartments</h4>
+    <div class="slideshows" style="max-width:500px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+         <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+         <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+    </div>
+
+    <script>
+     window.addEventListener("load", () => {
+       var myIndex = 0;
+       carousel();
+
+       function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlide4");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+     })
+    </script>
+    <h4>Artesian Appartments</h4>
+    <div class="slideshows" style="max-width:500px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+         <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+         <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+    </div>
+
+    <script>
+     window.addEventListener("load", () => {
+       var myIndex = 0;
+       carousel();
+
+       function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlide5");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+     })
+    </script>
+
+    <h2>Artesian Appartments</h2>
+    <div class="slideshows" style="max-width:500px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+         <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+         <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+    </div>
+
+    <script>
+     window.addEventListener("load", () => {
+       var myIndex = 0;
+       carousel();
+
+       function carousel() {
+         var i;
+         var x = document.getElementsByClassName("mySlide6");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+         }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+     })
+    </script>
+  </div>
+
+  <!--<div class="gate" id="gateC"><h3>AVAILABLE HOUSES IN GATE C</h3>
+  <h4>Walawi Appartments</h4>
+   <div class="slideshow-container" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
+     <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+       <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+       <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p> 
+       <hr>
+   </div>
+
+  <script>
+   window.addEventListener("load", () => {
+    var myIndex = 0;
+    carousel();
+   
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+   }) 
+  </script>
+
+   <h4>Anchor Suites</h4>
+   <div class="slideshow-container" style="max-width:500px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+       <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+       <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+   </div>
+
+   <script>
+   window.addEventListener("load", () => {
+     var myInd = 0;
+     carousel();
+     
+     function carousel() {
+       var f;
+       var y = document.getElementsByClassName("mySlides2");
+       for (f = 0; f < y.length; f++) {
+         y[f].style.display = "none";  
+         }
+         myInd++;
+         if (myInd > y.length) {myInd = 1}    
+         y[myInd-1].style.display = "block";  
+         setTimeout(carousel, 2000); // Change image every 2 seconds
+     }
+   })
+   </script>
+   
+   <h4>Artesian Appartments</h4>
+   <div class="slideshow-container" style="max-width:500px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+       <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+       <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+   </div>
+
+   <script>
+   window.addEventListener("load", () => {
+     var myIndex = 0;
+     carousel();
+   
+     function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides3");
+       for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+       }
+       myIndex++;
+       if (myIndex > x.length) {myIndex = 1}    
+       x[myIndex-1].style.display = "block";  
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+     }
+   })
+   </script>
+
+   <h4>Artesian Appartments</h4>
+   <div class="slideshow-container" style="max-width:500px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+       <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+       <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+   </div>
+
+   <script>
+   window.addEventListener("load", () => {
+     var myIndex = 0;
+     carousel();
+
+     function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides4");
+       for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+       }
+       myIndex++;
+       if (myIndex > x.length) {myIndex = 1}    
+       x[myIndex-1].style.display = "block";  
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+     }
+   })
+   </script>
+   <h4>Artesian Appartments</h4>
+   <div class="slideshow-container" style="max-width:500px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+       <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+       <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+   </div>
+
+   <script>
+   window.addEventListener("load", () => {
+     var myIndex = 0;
+     carousel();
+
+     function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides5");
+       for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+       }
+       myIndex++;
+       if (myIndex > x.length) {myIndex = 1}    
+       x[myIndex-1].style.display = "block";  
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+     }
+   })
+   </script>
+
+   <h2>Artesian Appartments</h2>
+   <div class="slideshow-container" style="max-width:500px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
+       <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
+       <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
+   </div>
+
+   <script>
+   window.addEventListener("load", () => {
+     var myIndex = 0;
+     carousel();
+
+     function carousel() {
+       var i;
+       var x = document.getElementsByClassName("mySlides6");
+       for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+       }
+       myIndex++;
+       if (myIndex > x.length) {myIndex = 1}    
+       x[myIndex-1].style.display = "block";  
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+     }
+   })
+   </script>
+  </div>-->
+
+</div>
+
+<footer>
+  <h3>Home Smart </h3>
+    <!--or more info visit www.blabla<br>-->
+    Follow us <a href="https://www.instagram.com/n.i.h.c_ishspam/#">
+      <i class='fa fa-instagram'style="font-size:23px"></i></a>
+    Whatsapp us <a href="https://api.whatsapp.com/send?phone=254701411121">
+      <i class='fa fa-whatsapp'style="color:green;font-size:23px"></i></a>
+    Contact us at: <br><br><a href="tel:254701411121">+254701411121</a>
+    <a href="tel:+254715375731">+25415375731</a>
+    <a href="tel:+254740586936">+254740586936</a>
+    <a href="tel:+254792685635">+254792685635</a>
+ </footer>
+  
+
