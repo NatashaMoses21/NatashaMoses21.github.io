@@ -13,11 +13,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+/*.slideshow-container{
+  position: relative;
+}
+
 
 /* Style the header */
 header {
   background-color: #8aebfe;
-  padding: 1px;
+  padding: 2px;
   text-align: left;
   font-size: 30px;
   color: black;
@@ -84,6 +88,34 @@ h5.a{
   height: 3000px;
   overflow: hidden;
 }
+.navbar {
+  width: 100%;
+  background-color: #fbf9f9;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 2px;
+  color: blue;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #db8181;
+}
+
+/*.active {
+  background-color: blue;
+}*/
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
@@ -96,31 +128,52 @@ h5.a{
 </head>
 <body>
 
- <header style="background-image: url('WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg');background-size: 100%100%;background-attachment: fixed;">
-  <h4 style="text-align:left">HOME SMART <i class='fas fa-home'style='font-size:12px'></i><i class='fas fa-home'style='font-size:24px'></i><i class='fas fa-home'style='font-size:36px'></i><i class='fas fa-home'style='font-size:48px;color:blue'></i></h4>
-  <h3>Find Your</h3>
-  <h3>Dream Home</h3>
-  <h6 style="color:blue">Worry No More<br>Find Comfortable Houses </h6><br>
-   <a href="#HS"><h4>Go BACK<br>TO MAIN MENU</h4></a>
+ <header style="background-image: url('WhatsApp Image 2023-03-19 at 12.19.44 AM.jpeg');
+ background-size: 100%100%;background-attachment: fixed;text-align: center;">
+ <div class="navbar">
+  <a href="#1"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="tel:+254792620418"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+ </div>
+
+ <h4 style="text-align:center">HOME SMART <i class='fas fa-home'style='font-size:12px'></i><i class='fas fa-home'style='font-size:24px'></i><i class='fas fa-home'style='font-size:36px'></i><i class='fas fa-home'style='font-size:48px;color:blue'></i></h4>
+ 
+<button onclick="typeWriter()"><h6>click me</h6></button>
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Welcome! Thank you for choosing us. Find Your New Home Stressfree.';
+var speed = 120;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
  </header>
 
-
-<div class="gate" style="background-image: url('WhatsApp Image 2023-03-18 at 8.58.17 AM.jpeg');
+ 
+<div class="gate" style="background-image: url('WhatsApp Image 2023-03-19 at 9.11.36 PM.jpeg');
 background-repeat: no-repeat;background-attachment: fixed;
 background-size: 100% 100%;">
- 
-  <div class="gate" id="HS">
 
+<div  id="#1">
  <section>
-   <article style="background-image: url('Screenshot 2023-03-17 231713.png');
-   background-attachment: fixed;background-size: 100% 100%;
+   <article style="background-image: url('WhatsApp Image 2023-03-19 at 12.19.42 AM.jpeg');
+   background-attachment:fixed;background-size: 100% 100%;
    background-repeat: no-repeat;">
 
     <h2 style="color:blue;text-align: center;font-size: 30px;">WELCOME TO HOME SMART</h2>
-    <h2>CHOOSE A LOCATION</h2>
-       <li><a href="#gateA">Gate A</a></li>
-       <li><a href="#gateB">Gate B</a></li>
-       <li><a href="#gateC">Gate C</a></li>
+    <h2>Pick A Location</h2>
+       <li><a href="#gateA">View the houses in Gate A</a></li><br>
+       <li><a href="#gateB">View the houses in Gate B</a></li><br>
+       <li><a href="#gateC">View the houses in Gate C</a></li><br>
+
+
     <h2>About Us<hr></h2>
     <p>
       This is a trusted website that helps you find houses around Juja<br><br>
@@ -129,67 +182,36 @@ background-size: 100% 100%;">
       <li>Size of the House</li><br>
       <li>Amount of rent paid per month</li><br>
       <li>Other expenses such as water and garbage</li><br>
-      <li>Location of the House</li><br>
+      <li>Exact location of the House</li><br>
       <li>Clear images of the rooms</li><br>
       <li>Contacts of the landlords and caretakers</li><br>
       <li>Availability of parking space</li><br>
-      <li>Availability of wi-fi</li><br>
-      <li>Roads connected to the house</li><br><br>
-      
-      <li>Size of the House</li><br>
-      <li>Amount of rent paid per month</li><br>
-      <li>Other expenses such as water and garbage</li><br>
-      <li>Location of the House</li><br>
-      <li>Clear images of the rooms</li><br>
-      <li>Contacts of the landlords and caretakers</li><br>
-      <li>Availability of parking space</li><br>
-      <li>Availability of wi-fi</li><br>
-      <li>Roads connected to the house</li><br><br>
+      <li>Availability of wi-fi and dstv</li><br>
+      <li>Roads connected to the house</li><br>
+      <li>Any specific rules and regulations</li><br>
+      <li>Questionnaires filled by current tenants</li><br>     
+    </p>
 
-      
-      <li>Size of the House</li><br>
-      <li>Amount of rent paid per month</li><br>
-      <li>Other expenses such as water and garbage</li><br>
-      <li>Location of the House</li><br>
-      <li>Clear images of the rooms</li><br>
-      <li>Contacts of the landlords and caretakers</li><br>
-      <li>Availability of parking space</li><br>
-      <li>Availability of wi-fi</li><br>
-      <li>Roads connected to the house</li><br><br>
-      
-      <li>Size of the House</li><br>
-      <li>Amount of rent paid per month</li><br>
-      <li>Other expenses such as water and garbage</li><br>
-      <li>Location of the House</li><br>
-      <li>Clear images of the rooms</li><br>
-      <li>Contacts of the landlords and caretakers</li><br>
-      <li>Availability of parking space</li><br>
-      <li>Availability of wi-fi</li><br>
-      <li>Roads connected to the house</li><br><br>
-
-      
-      <li>Size of the House</li><br>
-      <li>Amount of rent paid per month</li><br>
-      <li>Other expenses such as water and garbage</li><br>
-      <li>Location of the House</li><br>
-      <li>Clear images of the rooms</li><br>
-      <li>Contacts of the landlords and caretakers</li><br>
-      <li>Availability of parking space</li><br>
-      <li>Availability of wi-fi</li><br>
-      <li>Roads connected to the house</li><br><br>
-
-      <h2>iohfirhufgh9ogh8h508</h2>
-      <h2>Let us Know Your Experience</h2>
-
-
+    <h2>How It Works<hr></h2>
+    <h4>Perhaps you are wondering where to start?</h4>
+    <p>
+      Choose a location of your choice by clicking the link<br><br>
+      Look at the variety of houses displayed<br><br>
+      For further information concerning a house
+      Click the more info link<br><br>
+      Click the numbers to contact the caretakers for further information<br><br>
+      If you want to change location, simply go back to main menu<br><br>
+      Our contacts are provided below<br><br>
+      Don't Forget to follow us on instagram<br><br>
     </p>
 
    </article>
  </section>
- </div>
+</div>
 
 </body>
 </html>
+
 
   <div class="gate" id="gateA"><h3>AVAILABLE HOUSES IN GATE A</h3>
       <h4>Walawi Appartments</h4>
@@ -388,12 +410,12 @@ background-size: 100% 100%;">
   <div class="gate" id="gateB"><h3 style="text-align: center;">AVAILABLE HOUSES IN GATE B</h3>
     <h4>Walawi Appartments</h4>
      <div class="slideshows" style="width:200px">
-       <img class="mySlide" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-       <img class="mySlide" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-       <img class="mySlide" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
-       <img class="mySlide" src="WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
-       <img class="mySlide" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
-       <img class="mySlide" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
+       <img class="mySlide" src="images\WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p> 
@@ -421,12 +443,12 @@ background-size: 100% 100%;">
 
     <h4>Anchor Suites</h4>
     <div class="slideshows" style="max-width:500px">
-       <img class="mySlide2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-       <img class="mySlide2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-       <img class="mySlide2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-       <img class="mySlide2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide2" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -453,12 +475,12 @@ background-size: 100% 100%;">
      
     <h4>Artesian Appartments</h4>
     <div class="slideshows" style="max-width:500px">
-       <img class="mySlide3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-       <img class="mySlide3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-       <img class="mySlide3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-       <img class="mySlide3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide3" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -485,12 +507,12 @@ background-size: 100% 100%;">
 
     <h4>Artesian Appartments</h4>
     <div class="slideshows" style="max-width:500px">
-       <img class="mySlide4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-       <img class="mySlide4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-       <img class="mySlide4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-       <img class="mySlide4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide4" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -516,12 +538,12 @@ background-size: 100% 100%;">
     </script>
     <h4>Artesian Appartments</h4>
     <div class="slideshows" style="max-width:500px">
-       <img class="mySlide5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-       <img class="mySlide5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-       <img class="mySlide5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-       <img class="mySlide5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide5" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -548,12 +570,12 @@ background-size: 100% 100%;">
 
     <h2>Artesian Appartments</h2>
     <div class="slideshows" style="max-width:500px">
-       <img class="mySlide6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-       <img class="mySlide6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-       <img class="mySlide6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-       <img class="mySlide6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-       <img class="mySlide6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+       <img class="mySlide6" src="images\WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
        <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
          <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
          <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -579,15 +601,15 @@ background-size: 100% 100%;">
     </script>
   </div>
 
-  <div class="gate" id="gateC"><h3>AVAILABLE HOUSES IN GATE C</h3>
+  <!--<div class="gate" id="gateC"><h3>AVAILABLE HOUSES IN GATE C</h3>
   <h4>Walawi Appartments</h4>
    <div class="slideshow-container" style="width:200px">
-     <img class="mySlidess" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-     <img class="mySlidess" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
-     <img class="mySlidess" src="WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
-     <img class="mySlidess" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px"> 
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.16 AM.jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(1).jpeg" style="width:200px">
+     <img class="mySlides" src="WhatsApp Image 2023-03-14 at 11.51.16 AM(2).jpeg" style="width:200px">
      <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
        <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
        <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p> 
@@ -601,7 +623,7 @@ background-size: 100% 100%;">
    
     function carousel() {
       var i;
-      var x = document.getElementsByClassName("mySlidess");
+      var x = document.getElementsByClassName("mySlides");
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
       }
@@ -615,12 +637,12 @@ background-size: 100% 100%;">
 
    <h4>Anchor Suites</h4>
    <div class="slideshow-container" style="max-width:500px">
-     <img class="mySlidess2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-     <img class="mySlidess2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-     <img class="mySlidess2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides2" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
      <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
        <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
        <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -633,7 +655,7 @@ background-size: 100% 100%;">
      
      function carousel() {
        var f;
-       var y = document.getElementsByClassName("mySlidess2");
+       var y = document.getElementsByClassName("mySlides2");
        for (f = 0; f < y.length; f++) {
          y[f].style.display = "none";  
          }
@@ -647,12 +669,12 @@ background-size: 100% 100%;">
    
    <h4>Artesian Appartments</h4>
    <div class="slideshow-container" style="max-width:500px">
-     <img class="mySlidess3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-     <img class="mySlidess3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-     <img class="mySlidess3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides3" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
      <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
        <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
        <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -665,7 +687,7 @@ background-size: 100% 100%;">
    
      function carousel() {
        var i;
-       var x = document.getElementsByClassName("mySlidess3");
+       var x = document.getElementsByClassName("mySlides3");
        for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
        }
@@ -679,12 +701,12 @@ background-size: 100% 100%;">
 
    <h4>Artesian Appartments</h4>
    <div class="slideshow-container" style="max-width:500px">
-     <img class="mySlidess4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-     <img class="mySlidess4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-     <img class="mySlidess4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides4" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
      <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
        <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
        <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -697,7 +719,7 @@ background-size: 100% 100%;">
 
      function carousel() {
        var i;
-       var x = document.getElementsByClassName("mySlidess4");
+       var x = document.getElementsByClassName("mySlides4");
        for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
        }
@@ -710,12 +732,12 @@ background-size: 100% 100%;">
    </script>
    <h4>Artesian Appartments</h4>
    <div class="slideshow-container" style="max-width:500px">
-     <img class="mySlidess5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-     <img class="mySlidess5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-     <img class="mySlidess5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides5" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
      <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
        <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
        <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -728,7 +750,7 @@ background-size: 100% 100%;">
 
      function carousel() {
        var i;
-       var x = document.getElementsByClassName("mySlidess5");
+       var x = document.getElementsByClassName("mySlides5");
        for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
        }
@@ -742,12 +764,12 @@ background-size: 100% 100%;">
 
    <h2>Artesian Appartments</h2>
    <div class="slideshow-container" style="max-width:500px">
-     <img class="mySlidess6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
-     <img class="mySlidess6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
-     <img class="mySlidess6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
-     <img class="mySlidess6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
-     <img class="mySlidess6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(1).jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(2).jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 11.51.15 AM(3).jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
+     <img class="mySlides6" src="WhatsApp Image 2023-03-14 at 3.08.17 PM.jpeg" style="width:200px">
      <p class="a"><i class='fas fa-bed'></i>2 bedroom<br><br>
        <i class='fas fa-map-marker-alt'></i>Gate A<br><br>
        <i class='fas fa-money-check-alt'style="color:blue"></i>KSH 14000 per month</p><hr>
@@ -760,7 +782,7 @@ background-size: 100% 100%;">
 
      function carousel() {
        var i;
-       var x = document.getElementsByClassName("mySlidess6");
+       var x = document.getElementsByClassName("mySlides6");
        for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
        }
@@ -771,21 +793,22 @@ background-size: 100% 100%;">
      }
    })
    </script>
-  </div>
+  </div>-->
 
 </div>
 
-<footer>
+
+<footer style="background-image:url('WhatsApp Image 2023-03-19 at 12.19.44 AM.jpeg');
+background-size: 100100; background-attachment: fixed;">
   <h3>Home Smart </h3>
-    <!--or more info visit www.blabla<br>-->
     Follow us <a href="https://www.instagram.com/n.i.h.c_ishspam/#">
-      <i class='fa fa-instagram'style="font-size:23px"></i></a><br<<br>
+      <i class='fa fa-instagram'style="font-size:23px"></i></a><br><br>
     Whatsapp us <a href="https://api.whatsapp.com/send?phone=254701411121">
       <i class='fa fa-whatsapp'style="color:green;font-size:23px"></i></a><br><br>
-    Contact us at: <br><a href="tel:254701411121">+254701411121</a><br>
+    Contact us at: <br><br><a href="tel:254701411121">+254701411121</a><br><br>
     <a href="tel:+254715375731">+25415375731</a><br><br>
     <a href="tel:+254740586936">+254740586936</a><br><br>
     <a href="tel:+254792685635">+254792685635</a><br><br>
- </footer>
-  
+</footer>
+
 
